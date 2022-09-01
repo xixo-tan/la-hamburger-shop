@@ -35,4 +35,6 @@ $(function ($) {
     }
   });
 
+  $('.modal-btn').modaal();
+
 });

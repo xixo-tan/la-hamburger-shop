@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <!-- slick slider -->
+  <!-- js -->
   <script src="/js/slick.min.js"></script>
   <script src="js/jquery.bgswitcher.js"></script>
+  <script src="/js/modaal.min.js"></script>
   <script src="js/main.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="slick.css">
   <link rel="stylesheet" href="slick-theme.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modaal.min.css">
   <!-- title -->
   <title>Daisy's Burger</title>
 </head>
@@ -167,6 +169,33 @@
       </div>
     </div>
     <p class="more-btn">more</p>
+  </section>
+  <section id="news">
+    <h2 class="heading">NEWS</h2>
+    <p class="subheading">ニュース</p>
+    <div class="modal">
+      <div class="modal-box">
+        <a href="#news1" class="modal-btn">
+          <img src="images/banner1.jpg" alt="" class="banner">
+        </a>
+      </div>
+      <div id="news1" style="display: none;" class="news">
+        <img src="images/banner1.jpg" alt="" class="banner">
+        <h3>モバイルオーダーシステムがスタートしました</h3>
+        <p>モバイルオーダーを使えばスムーズにお受け取りいただくことができます。</p>
+      </div>
+      <div class="modal-box">
+        <a href="#news1" class="modal-btn">
+          <img src="images/banner2.jpg" alt="" class="banner">
+        </a>
+      </div>
+      <div id="news1" style="display: none;" class="news">
+        <img src="images/banner2.jpg" alt="" class="banner">
+        <h3>オープン記念セール開催中です</h3>
+        <p>全品10%OFFになっています。この機会に是非ご来店ください！</p>
+      </div>
+    </div>
+
   </section>
 </body>
 </html>
