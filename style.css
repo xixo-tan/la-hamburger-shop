@@ -51,12 +51,13 @@ body {
 }
 
 .bg-switcher h1 {
+  float: left;
   color: #fff;
-  font-size: 150px;
+  font-size: 130px;
   font-weight: bold;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   margin: 30px;
-  font-family: 'Bubblegum Sans', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 
 #about {
@@ -66,7 +67,7 @@ body {
 
 .fadein {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateX(-60px);
   transition: all 1s;
 }
 
@@ -185,7 +186,7 @@ thead {
 }
 
 .more-btn {
-  background-color: #fabb51;
+  background-color: #fa7e51;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
