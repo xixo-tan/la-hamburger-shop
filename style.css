@@ -100,3 +100,41 @@ body {
   margin: 10px 0;
   padding: 5px 10px;
 }
+
+/* MENU */
+
+#menu {
+  background-color: #faedc6;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.open-box {
+  display: none;
+}
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 1000px;
+}
+
+.food-box {
+  width: 200px;
+}
+
+.food-box-img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.more-btn {
+  background-color: #fabb51;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
