@@ -3,6 +3,36 @@
   margin: 0;
 }
 
+/* header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: absolute;
+  /* ↑意味調べるべき！ */
+  top: 0;
+  /* ↑意味調べるべき！ */
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 50px;
+}
+
+nav a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  /* ↑意味調べるべき！ */
+}
+
 body {
   background: url(images/bg-about.jpg) center/contain;
   font-family: 'Noto Sans JP', sans-serif;
@@ -192,4 +222,39 @@ thead {
 .modaal-close:hover:after,
 .modaal-close:hover:before {
   background-color: #fabb51;
+}
+
+/* Access */
+#access {
+  background-color: #faedc6;
+  padding: 100px 0;
+}
+
+.access-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.access-box {
+  margin-left: 50px;
+}
+
+.access-box-title {
+  font-weight: bold;
+}
+
+.access-box-text {
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #fabb51;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
 }
