@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(images/bg-about.jpg) center/contain;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bg-switcher {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/bg1.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-end;
+  overflow: hidden;
+}
+
+.bg-switcher h1 {
+  color: #fff;
+  font-size: 150px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+#about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.heading {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+#bg-fixed {
+  background: url(images/bg-fixed.jpg) center/contain;
+  height: 300px;
+  background-attachment: fixed;
+}
+
+#limited {
+  padding: 100px 0;
+}
+
+.subheading {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ↓これなんだ？ */
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  /* ↑この2行理解すべき */
+  background-color: #fff;
+  border: 3px solid #dcdcdc;
+  border-radius: 10px;
+  height: 350px;
+  margin: 50px 50px 0 50px;
+  padding: 50px;
+}
+
+.slide-img {
+  width: 40%;
+}
+
+.slide-box {
+  padding-left: 30px;
+  width: 60%;
+}
+
+.slide-title {
+  font-size: 36px;
+}
+
+.slide-tag {
+  background-color: #f05454;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 10px;
+}
