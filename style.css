@@ -129,6 +129,31 @@ body {
   width: 100%;
 }
 
+.drink-title {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 56px;
+  margin-top: 50px;
+}
+
+#menu table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+thead {
+  border-bottom: 1px solid #808080;
+}
+
+#menu th,
+#menu td {
+  padding: 10px 20px;
+}
+
+.drink-menu {
+  text-align: left;
+}
+
 .more-btn {
   background-color: #fabb51;
   border-radius: 5px;
