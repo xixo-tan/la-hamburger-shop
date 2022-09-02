@@ -24,6 +24,17 @@ $(function ($) {
     centerPadding: '20%',
   });
 
+  $('.slider').on('mouseover', function(e) {
+    var $currTarget = $(e.currentTarget),
+    index = $currTarget.data('slick-index'),
+    slickObj = $('#slider').slick('getSlick');
+    slickObj.slickGoTo(index, true);    // アニメーション中でも切り替える
+    $slide.slick('slickPause');     // 自動切り替え停止
+})
+.on('mouseout', function(e) {
+    $slide.slick('slickPlay');  // 自動切り替え再開
+});
+
   $('.more-btn').on('click', function () {
     if ($('.open-box').is(':hidden')) {
       $('.open-box').slideDown();
@@ -39,12 +50,18 @@ $(function ($) {
 
   $('.modal-btn').modaal();
 
+  $('.news-switcher').bgSwitcher({
+    images: ['images/banner1.jpg', 'images/banner1.jpg', 'images/banner1.jpg'],
+    interval: 3000,
+    loop: true,
+  });
+
   $('nav a[href^="#"]').click(function () {
     var adjust = 0;
-    var speed = 400;
+    var speed = 600;
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - adjust;
+    var position = target.offset().top - adjust + 50;
     $('body,html').animate({
       scrollTop: position
     }, speed, 'swing');
