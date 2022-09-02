@@ -7,12 +7,12 @@
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  padding: 30px 50px;
+  padding: 30px 0px;
   position: absolute;
-  /* ↑意味調べるべき！ */
+  /* ↑　基準値に設定 */
   top: 0;
   /* ↑意味調べるべき！ */
+  width: 100%;
 }
 
 nav ul {
@@ -26,7 +26,7 @@ nav li {
 
 nav a {
   color: #fff;
-
+  padding: 30px 25px;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
