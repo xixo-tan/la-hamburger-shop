@@ -25,11 +25,7 @@ $(function ($) {
   });
 
   $('.slider').on('mouseover', function(e) {
-    var $currTarget = $(e.currentTarget),
-    index = $currTarget.data('slick-index'),
-    slickObj = $('#slider').slick('getSlick');
-    slickObj.slickGoTo(index, true);    // アニメーション中でも切り替える
-    $slide.slick('slickPause');     // 自動切り替え停止
+    $slide.slick('slickPause');
 })
 .on('mouseout', function(e) {
     $slide.slick('slickPlay');  // 自動切り替え再開
